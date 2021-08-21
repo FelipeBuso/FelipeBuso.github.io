@@ -1,0 +1,33 @@
+.card-project-section {
+  background-color: #eeede7 ;
+  border-radius: 6px;
+  box-shadow: 5px 4px 2px #868b8e;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.card-project-section iframe {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.card-project-section a {
+  background-color: silver;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+  width: 90%;
+}
+
+.card-project-section a:hover {
+  background-color: black;
+  color: white;
+}

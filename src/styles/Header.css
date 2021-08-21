@@ -1,0 +1,38 @@
+.header-section {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+  top: 0;
+  width: 100%;
+}
+
+.links-header-section {
+  padding: 0 20px;
+  margin-right: 30px;
+}
+
+.header-section h3 {
+  font-size: 4em;
+}
+
+.fab {
+  font-size: 4em;
+  color: white;
+  margin: 0 20px;
+}
+
+.far {
+  font-size: 4em;
+  color: white;
+  margin: 0 20px;
+}
+
+.fab:hover {
+  transition: 0.5s;
+  font-size: 4.2em;
+}
