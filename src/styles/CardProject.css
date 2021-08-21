@@ -4,12 +4,14 @@
   box-shadow: 5px 4px 2px #868b8e;
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
   padding: 10px;
   text-align: center;
   width: 30%;
 }
 
 .card-project-section iframe {
+  border-radius: 5px;
   margin: 0 auto;
   text-align: center;
   width: 90%;
@@ -30,4 +32,10 @@
 .card-project-section a:hover {
   background-color: black;
   color: white;
+}
+
+.card-project-section p {
+  margin: 10px auto;
+  text-align: center;
+  width: 90%;
 }
