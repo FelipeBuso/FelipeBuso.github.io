@@ -1,6 +1,8 @@
 @media screen and (max-width: 600px) {
   .projects-section {
     margin-top: 80px;
+    margin-bottom: 60px;
+    
   }
 
   .project-cards-div {
