@@ -1,5 +1,6 @@
 import React from 'react';
 import CardProject from '../components/CardProject';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import projetos from '../ProjectList';
 import '../styles/Projects.css';
@@ -13,6 +14,7 @@ export default function Projects() {
           <CardProject key={ i } project={ project } />
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
