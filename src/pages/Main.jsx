@@ -11,7 +11,7 @@ export default function Main() {
       <div className="main-div">
         <div className="text-main-section">
           <h1>Olá, meu nome é Felipe Buso.</h1>
-          <h2>Sou estudante de desenvolvimento web full stack na Trybe.</h2>
+          <h2>Sou estudante de Desenvolvimento Web Full Stack na Trybe.</h2>
         </div>
         <div className="button-main-section">
           <Link to="/projetos">
