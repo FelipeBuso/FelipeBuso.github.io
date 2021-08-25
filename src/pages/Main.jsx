@@ -8,17 +8,19 @@ export default function Main() {
   return (
     <div className="main-section">
       <Header />
-      <div className="text-main-section">
-        <h1>Olá, meu nome é Felipe Buso</h1>
-        <h2>Sou estudante de desenvolvimento web full stack na Trybe</h2>
-      </div>
-      <div className="button-main-section">
-        <Link to="/projetos">
-          <h3>Projetos</h3>
-        </Link>
-        <Link to="/sobre">
-          <h3>Sobre</h3>
-        </Link>
+      <div className="main-div">
+        <div className="text-main-section">
+          <h1>Olá, meu nome é Felipe Buso.</h1>
+          <h2>Sou estudante de desenvolvimento web full stack na Trybe.</h2>
+        </div>
+        <div className="button-main-section">
+          <Link to="/projetos">
+            <h3>PROJETOS</h3>
+          </Link>
+          <Link to="/sobre">
+            <h3>SOBRE</h3>
+          </Link>
+        </div>
       </div>
       <Footer />
     </div>

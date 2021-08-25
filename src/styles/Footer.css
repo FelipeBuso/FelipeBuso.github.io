@@ -5,7 +5,15 @@
 
   .button-home {
     font-size: 1.3em;
-    margin-top: 12px;
+  }
+
+  .copyrigth {
+    color: white;
+    font-size: 12px;
+  }
+
+  .fa-copyright {
+    font-family: 12px;
   }
 }
 
@@ -16,21 +24,31 @@
 
   .button-home {
     font-size: 2em;
-    margin-top: 25px;
+  }
+
+  .copyrigth {
+    color: white;
+    font-size: 25px;
+  }
+
+  .fa-copyright {
+    font-family: 25px;
   }
 }
 
 .footer-section {
-  align-self: flex-end;
   bottom: 0;
   background-color: black;
+  display: flex;
   position: fixed;
   width: 100%;
 }
 
 .button-section {
+  align-items: center;
   display: flex;
-  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
   width: 90%;
 }
@@ -38,11 +56,16 @@
 .button-home {
   color: white;
   font-weight: 600;
-  
-  
   text-decoration: none;
 }
 
+.copyright {
+  align-self: flex-end;
+}
+
+.hidden {
+  visibility: hidden;
+}
 @-webkit-keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; } 

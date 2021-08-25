@@ -18,7 +18,7 @@ export default function CardProject({ project }) {
         allowfullscreen
       />
       <p>{ descricao }</p>
-      <a href={ linkProjeto }>Ver projeto</a>
+      <a target="_blank" rel="noreferrer" href={ linkProjeto }><h3>VER PROJETO</h3></a>
     </div>
   )
 }

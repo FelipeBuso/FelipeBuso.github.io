@@ -13,7 +13,11 @@ export default function Footer() {
   return (
     <div className="footer-section">
       <div className="button-section">
-        { location !== '/' && <Link className="button-home fadeIn" to="/">Início</Link> }
+        <Link
+          className={ location === '/' ? "hidden button-home fadeIn" : "button-home fadeIn"}
+          to="/">Início
+        </Link>
+        <h6 className="copyrigth">Felipe Buso <i className="far fa-copyright"></i></h6>
       </div>
     </div>
   )
