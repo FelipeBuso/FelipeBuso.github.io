@@ -16,6 +16,7 @@ export default function CardProject({ project }) {
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
+        picture-in-picture
       />
       <p>{ descricao }</p>
       <a target="_blank" rel="noreferrer" href={ linkProjeto }><h3>VER PROJETO</h3></a>
