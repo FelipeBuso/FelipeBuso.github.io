@@ -19,7 +19,7 @@
   .card-project-section {
     box-shadow: 5px 4px 2px #868b8e;
     width: 30%;
-    margin: 0 10px;
+    margin: 10px;
   }
 
   .card-project-section iframe {

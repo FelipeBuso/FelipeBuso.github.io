@@ -21,7 +21,8 @@
   .project-cards-div {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 0 auto 150px;
     width: 90%;
   }
 }

@@ -17,6 +17,12 @@ const projetos = [
     linkProjeto: 'https://FelipeBuso.github.io/trybewallet',
     descricao: 'Projeto desenvolvido com React/Redux de uma carteira de despesas com conversor de moedas'
   },
+  {
+    nome: 'Front-end Online Store',
+    linkVideo: 'https://www.youtube.com/embed/Nmhvc_HPS8w?controls=1',
+    linkProjeto: 'https://FelipeBuso.github.io/frontend-online-store',
+    descricao: 'Versão simplificada, sem persistência no banco de dados, de uma loja online, desenvolvendo em grupo suas funcionalidades.'
+  },
 ];
 
 export default projetos;
