@@ -1,7 +1,7 @@
 @media screen and (max-width: 600px) {
 
   .project-cards-div {
-    margin-top: 100px;
+    padding-top: 100px;
   }
   
 }
@@ -9,23 +9,26 @@
 @media screen and (min-width: 601px) {
 
   .project-cards-div {
-    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 
 .projects-section {
+  margin-top: 0;
   background-color: black;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   height: 100vh;
-  justify-content: center;
-  width: 100%;
+  /* justify-content: center; */
+  /* width: 100%; */
 }
 
 .project-cards-div {
   background-color: black;
+  margin-left: auto;
+  margin-right: auto;
   width: 85%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .bm-item {
@@ -49,7 +52,7 @@
 .bm-burger-button {
   position: fixed;
   width: 36px;
-  height: 36px;
+  height: 30px;
   left: 36px;
   top: 36px;
 }

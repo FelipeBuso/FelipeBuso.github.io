@@ -13,7 +13,7 @@ export default function Main() {
         <div className="text-main-section">
           <h2>PORTFÓLIO</h2>
           <h1>Felipe Buso</h1>
-          <h2>FULL STACK DEVELOPER</h2>
+          <h2>DESENVOLVEDOR WEB FULL STACK</h2>
         </div>
         <div className="links-header-section">
         <a href="https://www.linkedin.com/in/felipebuso/" target="_blank" rel="noreferrer"><i className="toplink fab fa-linkedin"></i></a>

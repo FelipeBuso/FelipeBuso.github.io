@@ -1,9 +1,10 @@
 @media screen and (max-width: 600px) {
   .card-project-section {
-    width: 90%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    height: 70vh;
+    width: 90%;
   }
 
   .card-project-section iframe {
@@ -18,8 +19,9 @@
 @media screen and (min-width: 601px) {
   .card-project-section {
     box-shadow: 5px 4px 2px #868b8e;
-    width: 90%;
+    height: 80vh;
     margin: 10px;
+    width: 90%;
   }
 
   .card-project-section iframe {
