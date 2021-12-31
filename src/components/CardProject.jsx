@@ -4,7 +4,7 @@ import '../styles/CardProject.css';
 
 
 export default function CardProject({ project }) {
-  const { nome, linkVideo, linkProjeto, descricao } = project;
+  const { nome, linkVideo, linkProjeto, linkRepo, descricao } = project;
   return (
     <div className="card-project-section">
       <h2>{ nome }</h2>
@@ -18,7 +18,10 @@ export default function CardProject({ project }) {
         allowfullscreen
       />
       <p>{ descricao }</p>
-      <a target="_blank" rel="noreferrer" href={ linkProjeto }><h3>VER PROJETO</h3></a>
+      <div className="div-buttons">
+        <a target="_blank" rel="noreferrer" href={ linkProjeto }><h3>VER PROJETO</h3></a>
+        <a target="_blank" rel="noreferrer" href={ linkRepo }><h3>REPOSITÓRIO</h3></a>
+      </div>
     </div>
   )
 }
@@ -28,6 +31,7 @@ CardProject.propTypes = {
     nome: PropTypes.string,
     linkVideo: PropTypes.string,
     linkProjeto: PropTypes.string,
+    linkRepo: PropTypes.string,
     descricao: PropTypes.string,
   }).isRequired,
 };

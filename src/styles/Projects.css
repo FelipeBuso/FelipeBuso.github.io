@@ -15,7 +15,7 @@
 
 .projects-section {
   margin-top: 0;
-  background-color: black;
+  background-image: linear-gradient(#6a11cb 10%, #2575fc 100%);
   /* display: flex; */
   /* flex-direction: row; */
   height: 100vh;
@@ -24,7 +24,7 @@
 }
 
 .project-cards-div {
-  background-color: black;
+  background-color: transparent;
   margin-left: auto;
   margin-right: auto;
   width: 85%;
