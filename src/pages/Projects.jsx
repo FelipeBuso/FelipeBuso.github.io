@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import CardProject from '../components/CardProject';
 import SideBar from '../components/Menu';
 import projetos from '../ProjectList';
@@ -10,8 +11,8 @@ export default function Projects() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     initialSlide: 0,
     appendDots: dots => (
       <div
@@ -49,12 +50,15 @@ export default function Projects() {
       }
     ]
   };
+  const local = useLocation();
+  // console.log(local.pathname.split('/')[2])
   return (
     <div className="projects-section" id="outer-container">
      <SideBar pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } />
       <div className="project-cards-div" id="page-wrap">
         <Slider { ...settings }>
-          { projetos.map((project, i) => (
+          { projetos.filter((p) => p.stack === local.pathname.split('/')[2])
+            .map((project, i) => (
             <div key={i}>
               <CardProject project={ project } />
             </div>

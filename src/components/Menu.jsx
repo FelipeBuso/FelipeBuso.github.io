@@ -12,7 +12,8 @@ export default class SideBar extends React.Component {
     return (
       <Menu>
         <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/projetos">Projetos</a>
+        <a id="about" className="menu-item" href="/projetos/front-end">Projetos Front-end</a>
+        <a id="about" className="menu-item" href="/projetos/back-end">Projetos Back-end</a>
       </Menu>
     );
   }

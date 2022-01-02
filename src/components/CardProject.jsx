@@ -4,11 +4,13 @@ import '../styles/CardProject.css';
 
 
 export default function CardProject({ project }) {
-  const { nome, linkVideo, linkProjeto, linkRepo, descricao } = project;
+  const { nome, linkVideo, linkImage, linkProjeto, linkRepo, descricao, stack } = project;
   return (
     <div className="card-project-section">
       <h2>{ nome }</h2>
-      <iframe 
+      {
+        stack === 'front-end' 
+        ? <iframe 
         width="560"
         height="315"
         src={ linkVideo }
@@ -17,9 +19,14 @@ export default function CardProject({ project }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
+      : <img src={ linkImage } alt={ nome } />
+      }
+      
       <p>{ descricao }</p>
       <div className="div-buttons">
-        <a target="_blank" rel="noreferrer" href={ linkProjeto }><h3>VER PROJETO</h3></a>
+        {
+          stack === 'front-end' && <a target="_blank" rel="noreferrer" href={ linkProjeto }><h3>VER PROJETO</h3></a>
+        }
         <a target="_blank" rel="noreferrer" href={ linkRepo }><h3>REPOSITÓRIO</h3></a>
       </div>
     </div>
@@ -29,7 +36,9 @@ export default function CardProject({ project }) {
 CardProject.propTypes = {
   project: PropTypes.shape({
     nome: PropTypes.string,
+    stack: PropTypes.string,
     linkVideo: PropTypes.string,
+    linkImage: PropTypes.string,
     linkProjeto: PropTypes.string,
     linkRepo: PropTypes.string,
     descricao: PropTypes.string,
