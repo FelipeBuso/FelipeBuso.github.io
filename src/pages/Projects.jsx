@@ -55,7 +55,14 @@ export default function Projects() {
   return (
     <div className="projects-section" id="outer-container">
      <SideBar pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } />
+     <div className='Title'>
+       
+     </div>
       <div className="project-cards-div" id="page-wrap">
+        {
+          local.pathname.split('/')[2] === 'front-end'
+          ? <h1>Front-end</h1> : <h1>Back-end</h1>
+        }
         <Slider { ...settings }>
           { projetos.filter((p) => p.stack === local.pathname.split('/')[2])
             .map((project, i) => (

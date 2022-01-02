@@ -3,9 +3,9 @@ const projetos = [
   {
     nome: 'Microservice TimeStamp',
     stack: 'back-end',
-    linkImage: 'images/microstamp-service.jpeg',
+    linkImage: '/images/microstamp-service.jpeg',
     linkRepo: 'https://github.com/FelipeBuso/microservice-timestamp',
-    descricao: 'Microservice de apenas uma rota, ao acessar essa rota passando uma data como parametro retornar um JSON. Caso não envie a data como parâmetro, retorna a data atual.'
+    descricao: 'Microservice de apenas uma rota, ao acessar essa rota passando uma data como parametro retorna um JSON. Caso não envie a data como parâmetro, retorna a data atual.'
   },
   {
     nome: 'Recipe App',

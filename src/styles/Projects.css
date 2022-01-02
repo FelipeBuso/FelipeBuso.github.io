@@ -31,6 +31,12 @@
   height: 100vh;
 }
 
+.project-cards-div h1 {
+  color: white;
+  font-size: 300%;
+  text-align: center;
+}
+
 .bm-item {
   display: inline-block;
 
